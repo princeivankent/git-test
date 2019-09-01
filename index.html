@@ -4,15 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <title>Document</title>
 </head>
 <body>
-    <h3>This is edited from source developer!</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <label for="">User B Changes</label>
+          <ul>
+            <li>Added JS Functionalities</li>
+          </ul>
+        </div>
 
-    <p>(edited) Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Laborum, quam ratione dignissimos deserunt facere id dolores voluptatem, 
-      necessitatibus ullam laboriosam minus ducimus, 
-      blanditiis saepe eligendi tempore accusantium magni eveniet voluptas.
-    </p>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label>Number 1</label>
+              <input type="number" class="form-control" name="num1" id="num1">
+            </div>
+            <div class="form-group">
+              <label>Number 2</label>
+              <input type="number" class="form-control" name="num2" id="num2">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success" onclick="getResult()">See Result</button>
+              <button class="btn btn-danger" onclick="resetResult()">Reset Result</button>
+            </div>
+            <div class="form-group">
+              <label>Result: </label>
+              <span id="result"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./functions.js"></script>
 </body>
 </html>
